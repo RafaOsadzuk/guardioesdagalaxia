@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav{
+    width: 60%;
+}
+
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+    color:aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover{
+    color: #d21617;
+}
+
+#logo {
+    width:140px;
+    height: auto;
+}
+
+.cards_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.photos_film{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 40px;
+    column-gap: 40px;
+    
+}
+
+.card{
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: 60% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 20px;
+}
+.card:hover {
+    transform: scale(1.02);
+}
+
+.photo1{
+    background-image: url(https://br.web.img2.acsta.net/r_1920_1080/pictures/23/05/04/10/42/3341920.jpg);
+}
+.photo2{
+    background-image: url(https://br.web.img3.acsta.net/r_1920_1080/pictures/22/12/08/11/30/2850631.jpg);
+}
+.photo3{
+    background-image: url(https://br.web.img2.acsta.net/r_1920_1080/pictures/23/02/14/08/42/5385233.jpg);
+}
+.photo4{
+    background-image: url(https://br.web.img2.acsta.net/r_1920_1080/pictures/23/02/14/08/42/5444516.jpg);
+}
+.photo5{
+    background-image: url(https://br.web.img3.acsta.net/r_1920_1080/pictures/23/05/04/10/42/0312243.jpg);
+}
+.photo6{
+    background-image: url(https://br.web.img2.acsta.net/r_1920_1080/pictures/23/02/14/08/42/5371193.jpg);
+}
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+span {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;;
+}
+
+@media(max-width: 768px) {
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+    .photos_film{
+        grid-template-columns: repeat(2,1fr);
+    }
+}

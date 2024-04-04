@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #D21617;
+}
+
+#logo {
+    width: 140px;
+    height: auto;
+}
+
+section{
+    display: block;
+}
+
+.cards{
+    color: aliceblue;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 80px;
+    margin-left: 30%;
+    grid-gap: 30px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: red;
+    padding: 50px 60px 40px;
+    transition: 0.5s;
+    box-shadow: 6px 6px 10px red;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.card .photo{
+    width: 120px;
+    height: 150px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    border: solid 2px;
+}
+.card h3{
+    background-color: red;
+    font-size: 18px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    margin-bottom: 10px;
+}
+p {
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 17px;
+    background-color: red;
+}
+.card:hover{
+    transform: scale(1.03);
+}
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+span {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;;
+}
+
+@media(max-width: 768px){
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+    .cards{
+        margin-left: 13%;
+    }
+}   
